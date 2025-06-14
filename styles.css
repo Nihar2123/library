@@ -1,0 +1,54 @@
+body {
+    font-family: system-ui, "Segoe UI", Roboto, Helvetica, Arial, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+
+header{
+    background-color: brown;
+    height: 10vh;
+    width: 100%;
+    position: relative;
+    top: -0.3em;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.container{
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+    gap: 20px;
+}
+
+.card{
+    height: 400px;
+    background-color: blue;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    font-size: 1.1em;
+}
+
+.buttonContainer{
+    display: flex;
+    gap: 30px;
+}
+
+.buttonContainer button{
+    font-size: 1.05em;
+    padding: 0.5em;
+    border-radius: 10px;
+
+    background-color: red;
+}
+
+.buttonContainer button:first-child{
+    background-color: #40ff2f;
+}
+
+.buttonContainer button:hover{
+    background-color: white;
+}
