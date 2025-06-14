@@ -10,7 +10,30 @@
     <body>
         <header>
             <h1>Library</h1>
+            <button class="new-book">Add Book</button>
         </header>
+        
+        <dialog id="dialogForm">
+            <h3>Enter Book Details</h3>
+            <form id="form" >
+                <label for="title">Title</label>
+                <input type="text" id="title" name="title" required>
+                <label for="author">Author</label>
+                <input type="text" id="author" name="author" required>
+                <label for="pages">Pages</label>
+                <input type="number" id="pages" name="pages" required>
+                <div class="radioContainer">
+                    <div><input type="radio" id="read" name="read" value="Completed Reading">
+                        <label for="read">Completed Reading</label></div>
+                    <div><input type="radio" id="unread" name="read" value="Not Read Yet" checked>
+                        <label for="unread">Not Read Yet</label></div>
+                </div>
+            </form>
+            <div class="buttonContainer">
+                <button class="cancel" type="reset">Cancel</button>
+                <button class="save" type="submit">Save</button>
+            </div>
+        </dialog>
         <div class="container">
 <!--            <div class="card"></div>-->
 <!--            <div class="card"></div>-->
